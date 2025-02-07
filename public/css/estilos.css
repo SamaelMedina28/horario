@@ -1,0 +1,44 @@
+:root{
+    --cl-primario: #8fdc69;
+    --cl-secundario: #ececec;
+    --cl-sombra: #518a35;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: var(--cl-primario);
+}
+
+strong{
+    display: block;
+    margin: 30px auto;
+    font-size: 1.4em;
+    width: 45%;
+    text-align: center;
+    border: 2px solid black;
+}
+main{
+    width: 100%;
+    text-align: center;
+}
+
+form button{
+    font-size: 1.2em;
+    width: 75%;
+    background-color: var(--cl-secundario);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 0px var(--cl-sombra);
+    font-weight: 600;
+}
+
