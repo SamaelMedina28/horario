@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dia</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
+
+    <strong> <?php echo ucfirst($dia); ?></strong>
+    <main>
+
+
     <?php 
-    "<br>";
-    foreach($resultado as $dia){
+        foreach($resultado as $dia){
         extract($dia);
-        echo $materia;
-        echo "<br>";
-        echo $hora_inicio;
-        echo "<br>";
-        echo $hora_fin;
-        echo "<br>";
-        echo $salon;
-        echo "<br>";
-        echo $edificio;
-        echo "<br>";
-    }
-    ?>
+    ?>   
+    <form>
+        <button class="options"> 
+        <?php 
+            echo $materia . "<br>" . substr($hora_inicio, 0 ,5) . " - " . substr($hora_fin, 0 ,5) . "<br>";
+/*             echo $salon;
+            echo "<br>";
+            echo $edificio;
+            echo "<br>"; */
+        }
+        ?>
+        </button>
+    </form>    
+    </main>
+
 </body>
 </html>

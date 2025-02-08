@@ -11,23 +11,23 @@
     <main>
         <form action="lunita/lunes" method="post">
             <input type="text" name="dia" value="lunes" hidden>
-            <button type="submit">Lunes</button>
+            <button class="options" type="submit">Lunes</button>
         </form>
         <form action="lunita/martes" method="post">
             <input type="text" name="dia" value="martes" hidden>
-            <button type="submit">Martes</button>  
+            <button class="options" type="submit">Martes</button>  
         </form>
         <form action="lunita/miercoles" method="post">
             <input type="text" name="dia" value="miercoles" hidden>
-            <button type="submit">Miercoles</button>
+            <button class="options" type="submit">Miercoles</button>
         </form> 
         <form action="lunita/jueves" method="post">
             <input type="text" name="dia" value="jueves" hidden>
-            <button type="submit">Jueves</button>
+            <button class="options" type="submit">Jueves</button>
         </form>
         <form action="lunita/viernes" method="post">
             <input type="text" name="dia" value="viernes" hidden>
-            <button type="submit">Viernes</button>
+            <button class="options" type="submit">Viernes</button>
         </form>       
     </main>
 </body>

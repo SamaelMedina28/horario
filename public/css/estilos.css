@@ -1,7 +1,7 @@
-:root{
+/* :root{
     --cl-primario: #8fdc69;
     --cl-secundario: #ececec;
-    --cl-sombra: #518a35;
+    --cl-sombra: #51358a;
 }
 
 *{
@@ -29,7 +29,6 @@ main{
 }
 
 form button{
-    font-size: 1.2em;
     width: 75%;
     background-color: var(--cl-secundario);
     color: black;
@@ -41,4 +40,4 @@ form button{
     box-shadow: 2px 2px 2px 0px var(--cl-sombra);
     font-weight: 600;
 }
-
+ */
