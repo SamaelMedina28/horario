@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\dabaBase;
+
 class HomeController extends Controller
 {
     public function index()
@@ -11,12 +13,14 @@ class HomeController extends Controller
 
     public function Vanessa()
     {
-        return $this->vista('vanessa/dias');
+        return $this->vista('vanessa.dias');
     }
 
     public function mostrarDia($dia)
     {
-        echo "El dia es: $dia";
+        $conexionDataBase = new dabaBase();
+        
+        return $this->vista('vanessa.mostrarDia', ["dia"=>$dia]);
     }
 
 
