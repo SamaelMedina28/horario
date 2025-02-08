@@ -1,7 +1,7 @@
-/* :root{
+:root{
     --cl-primario: #8fdc69;
     --cl-secundario: #ececec;
-    --cl-sombra: #51358a;
+    --cl-sombra: #8a3535;
 }
 
 *{
@@ -40,4 +40,3 @@ form button{
     box-shadow: 2px 2px 2px 0px var(--cl-sombra);
     font-weight: 600;
 }
- */
