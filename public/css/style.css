@@ -1,7 +1,7 @@
 :root{
     --cl-primario: #8fdc69;
     --cl-secundario: #ececec;
-    --cl-sombra: #8a3535;
+    --cl-sombra: #358a46;
 }
 
 *{
@@ -17,11 +17,12 @@ body{
 
 strong{
     display: block;
-    margin: 30px auto;
-    font-size: 1.4em;
+    margin: 20px auto;
+    font-size: 1.25em;
     width: 45%;
     text-align: center;
     border: 2px solid black;
+    margin-bottom: 2em;
 }
 main{
     width: 100%;
@@ -29,6 +30,7 @@ main{
 }
 
 form button{
+    font-size: 1rem;
     width: 75%;
     background-color: var(--cl-secundario);
     color: black;
