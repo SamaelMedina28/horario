@@ -12,6 +12,7 @@ class dabaBase
     protected $host = 'localhost';
 
     protected $conexion;
+    protected $resultado;
 
     public function __construct()
     {
@@ -25,4 +26,22 @@ class dabaBase
             die('Error de conexion '.$this->conexion->connect_error);
         }
     }
+
+    public function consulta($sql)
+    {
+        $this->resultado = $this->conexion->query($sql);
+        return $this;
+    } 
+
+    public function obtenerResultados()
+    {
+        return $this->resultado->fetch_all(MYSQLI_ASSOC);
+    }
+
+    public function obtenerResultado()
+    {
+        return $this->resultado->fetch_assoc();
+    }
+
+
 }

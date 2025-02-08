@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo $dia; ?>
+    <?php 
+    "<br>";
+    foreach($resultado as $dia){
+        extract($dia);
+        echo $materia;
+        echo "<br>";
+        echo $hora_inicio;
+        echo "<br>";
+        echo $hora_fin;
+        echo "<br>";
+        echo $salon;
+        echo "<br>";
+        echo $edificio;
+        echo "<br>";
+    }
+    ?>
 </body>
 </html>
