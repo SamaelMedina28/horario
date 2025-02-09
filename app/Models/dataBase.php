@@ -4,7 +4,7 @@ namespace App\Models;
 
 use mysqli; 
 
-class dabaBase
+class dataBase
 {
     protected $user = 'root';
     protected $password = '';
@@ -42,6 +42,8 @@ class dabaBase
     {
         return $this->resultado->fetch_assoc();
     }
+
+
 
 
 }
