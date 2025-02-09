@@ -39,21 +39,26 @@
     <main>
         <section class="options detallado">
             <span>Materia:</span>
-            <b><?= $materia ?></b>
-
-            <div>
-                <span>Hora de Inicio:</span>
-                <b><?=substr($hora_inicio, 0, 5)?></b>
-                <span>Salon:</span>
-                <b><?= $salon ?></b>
+            <b><?=strtoupper($materia)?></b>
+            <div class="flexContainer">
+                <div class="left">
+                    <span>Hora de Inicio:</span>
+                    <b><?= substr($hora_inicio, 0, 5) ?></b>
+                    <span>Salon:</span>
+                    <b><?= $salon ?></b>
+                </div>
+                <div>
+                    <span>Hora de Fin:</span>
+                    <b><?= substr($hora_fin, 0, 5) ?></b>
+                    <span>Edificio:</span>
+                    <b><?=strtoupper($edificio)?></b>
+                </div>
             </div>
-            <div>
-                <span>Hora de Fin:</span>
-                <b><?=substr($hora_fin, 0, 5)?></b>
 
-            </div>
         </section>
     </main>
+
+    <a href="../../lunita/<?=$diaInfo?>" class="atras"><-</a>
 
 </body>
 

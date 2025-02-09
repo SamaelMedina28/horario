@@ -28,6 +28,18 @@ main{
     width: 100%;
     text-align: center;
 }
+.atras{
+    background-color: rgb(13, 128, 13);
+    border-radius: 50px;
+    display: block;
+    color: var(--cl-secundario);
+    width: 25%;
+    height: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 50px auto;
+}
 
 .options{
     font-size: 1rem;
@@ -45,6 +57,27 @@ main{
 
 .detallado{
     margin: auto;
+    cursor: default;
+    font-size: .9em;
+}
+.detallado span{
+    font-weight: 100;
+    display: block;
+    text-align: left;
+    margin-top: 2em;
+}
+
+.detallado b{
+    display: block;
+    text-align: left;
+}
+
+.flexContainer{
+    display: flex;
+    margin-bottom: 2em;
+}
+.left{
+    width: 60%;
 }
 
 
