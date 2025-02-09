@@ -11,24 +11,28 @@
     <strong> <?php echo ucfirst($dia); ?></strong>
     <main>
 
-
     <?php 
-        foreach($resultado as $dia){
-        extract($dia);
+        foreach($resultados as $resultado){
+            extract($resultado);
     ?>   
-    <form>
-        <button class="options"> 
-        <?php 
-            echo $materia . "<br>" . substr($hora_inicio, 0 ,5) . " - " . substr($hora_fin, 0 ,5) . "<br>";
-/*             echo $salon;
-            echo "<br>";
-            echo $edificio;
-            echo "<br>"; */
-        }
-        ?>
+    <form action="<?php echo $dia ?>/mostrarInfo" method="post">
+        <!-- El campo oculto contiene la información de la materia -->
+        <input type="hidden" name="materia" value="<?=$materia;?>">
+        
+        <button class="options" type="submit"> 
+            <?php 
+                echo $materia . "<br>" . substr($hora_inicio, 0 ,5) . " - " . substr($hora_fin, 0 ,5) . "<br>";
+            ?>
         </button>
     </form>    
+    <?php } ?>
+
     </main>
 
 </body>
 </html>
+
+
+
+
+

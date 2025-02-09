@@ -12,6 +12,9 @@ Route::agregarRutasGet('/lunita', [HomeController::class, 'Vanessa']);
 Route::agregarRutasPost('/lunita/:dia', [HomeController::class, 'mostrarDia']);
 Route::agregarRutasGet('/lunita/:dia', [HomeController::class, 'mostrarDia']);
 
+Route::agregarRutasPost('/lunita/:dia/mostrarInfo', [HomeController::class, 'mostrarInfo']);
+Route::agregarRutasGet('/lunita/:dia/mostrarInfo', [HomeController::class, 'mostrarInfo']);
+
 
 
 
